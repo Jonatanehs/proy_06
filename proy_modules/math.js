@@ -1,5 +1,7 @@
 //se hace una constante con nombre math
 
+const { bgMagenta } = require("colors");
+
 const math = {};
 
 //se hace una constatnte con nombre invertirNumero de paso haciendo una funcion flecha
@@ -87,7 +89,9 @@ tiene los 2 valores iguales y añadir los "===" se vuelven mas estrictas*/
 
 //si esto no se cumple imprimira en la consola un mensaje con interpolacion
     }else {
-        console.log(`El valor ingresado es de tipo: ${dataType}, con un valor de: ${data}`);
+        console.log(`++`.yellow + `El valor ingresado es de tipo: `.cyan + 
+                    `${dataType}`.bgYellow + `, con un valor de:`.cyan + 
+                    ` ${data}`.bgGreen + `                             ++`.red);
         
  //switch hace una declaracion de cada caso       
         switch(dataType){
